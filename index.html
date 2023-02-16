@@ -3,7 +3,7 @@
   <script src="app.js"></script>
 </head>
 
-
+<body>
 ​<h1>FAQs</h1>
 
 <div class="wrapper">
@@ -75,5 +75,19 @@ Or, send an email with the subject "Verify" to verify@codepen.io from the email 
   </div>
   
 </div>
+<script>
+        let answers=document.querySelectorAll(".accordion");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
 
+</body>
 
