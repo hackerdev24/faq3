@@ -1,7 +1,7 @@
 let question = document.querySelectorAll(".question");
 
-question.forEach(question => {
-  question.addEventListener("click", event => {
+window.addEventListener("click", event => {
+  question.forEach(question => {
     const active = document.querySelector(".question.active");
     if(active && active !== question ) {
       active.classList.toggle("active");
@@ -15,4 +15,4 @@ question.forEach(question => {
       answer.style.maxHeight = 0;
     }
   })
-})
+});
